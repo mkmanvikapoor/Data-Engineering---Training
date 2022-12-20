@@ -1,10 +1,21 @@
 import random
+import numpy as np
 
 # print("Hello World")
 # print(type('default string '))
 # print(type(u'string with b '))
 # print(type('default string '))
 # print(type(b'string with b '))
+
+# class myclass():
+#   def __len__(self):
+#     return 0
+#
+# myobject = myclass()
+# print(bool(myobject))
+
+# x = 200
+# print(isinstance(x, int))
 
 # for x in range(1, 5):
 #     print(x),
@@ -160,33 +171,129 @@ import random
 # print(setunion)
 
 #Dictonaries
-thisdict = {
-    "brand": "ford",
-    "model": "Mustang",
-    "year": 1964,
-    "colors": ["red", "blue", "white"]
-}
-print(thisdict["model"])
-print(len(thisdict))
-print(thisdict)
-print(type(thisdict))
-
-thatdict = dict(name = "John", age = 36, country = "Norway")
-y = thatdict.keys()
-print(y)
-x = thatdict.get("age")
-print(x)
-print(thatdict)
+# thisdict = {
+#     "brand": "ford",
+#     "model": "Mustang",
+#     "year": 1964,
+#     "colors": ["red", "blue", "white"]
+# }
+# print(thisdict["model"])
+# print(len(thisdict))
+# print(thisdict)
+# print(type(thisdict))
+#
+# thatdict = dict(name = "John", age = 36, country = "Norway")
+# y = thatdict.keys()
+# print(y)
+# x = thatdict.get("age")
+# print(x)
+# print(thatdict)
 # z = thatdict.values()
 # print(z)
-z = thatdict.items()
-print(z)
-thatdict["city"] = "Norway"
-print(thatdict)
-thatdict.update({"age": 46})
-thatdict.pop("name")
-print(thatdict)
-thatdict.popitem()
-print(thatdict)
-if "age" in thatdict:
-    print("Age is there in list")
+# z = thatdict.items()
+# print(z)
+# thatdict["city"] = "Norway"
+# print(thatdict)
+# thatdict.update({"age": 46})
+# thatdict.pop("name")
+# print(thatdict)
+# thatdict.popitem()
+# print(thatdict)
+# # del thisdict["country"]
+# # print(thisdict)
+# mydict = dict(thisdict)
+# print(mydict)
+# if "age" in thatdict:
+#     print("Age is there in list")
+
+# myfamily = {
+#   "child1" : {
+#     "name" : "EmilyS",
+#     "year" : 2004
+#   },
+#   "child2" : {
+#     "name" : "Tobias",
+#     "year" : 2007
+#   },
+#   "child3" : {
+#     "name" : "Linus",
+#     "year" : 2011
+#   }
+# }
+
+# child1 = {
+#   "name" : "Emil",
+#   "year" : 2004
+# }
+# child2 = {
+#   "name" : "Tobias",
+#   "year" : 2007
+# }
+# child3 = {
+#   "name" : "Linus",
+#   "year" : 2011
+# }
+#
+# myfamily = {
+#   "child1" : child1,
+#   "child2" : child2,
+#   "child3" : child3
+# }
+#
+# print(myfamily)
+
+#If..Else
+# a = 2
+# b = 33
+# if b > a:
+#   print("b is greater than a")
+# elif a == b:
+#   print("a and b are equal")
+#
+# a = 330
+# b = 330
+# print("A") if a > b else print("B")
+# print("A") if a > b else print("=") if a == b else print("B")
+#
+# a = 33
+# b = 200
+#
+# if b > a:
+#   pass
+
+#Matrices using nested Lists
+# A = [[1, 4, 5, 12], [-5, 8, 9, 0], [-6, 7, 11, 19]]
+# print(A)
+# print(A[1])
+# print(A[1][1])
+# print(A[0][-1])
+
+# a = np.array([[1, 2, 3], [4, 5, 6]], dtype=complex)
+# print(a)
+# print(type(a))
+#
+# ones_array = np.ones( (1, 5), dtype=np.int32 )
+# print(ones_array)
+#
+# b = np.zeros( (2, 3) )
+# print(b)
+#
+# a = np.arange(4)
+# print(a)
+#
+# B = np.arange(12).reshape(2, 6)
+# print(B)
+
+#Matrices Operations
+A = np.array([[2, 4, 5, 6], [5, -6, 3, 2], [2, 3, 4, 5]])
+B = np.array([[9, 3], [3, -6]])
+# C = A + B
+# D = A.dot(B)
+# E = A.transpose()
+# print(C)
+# print(D)
+# print(E)
+
+print(B[:, 1])
+print(A[:2, :3])
+print(A[:, 1:4])
