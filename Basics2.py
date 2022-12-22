@@ -144,10 +144,50 @@
 #     print(count, elem)
 
 #while loops
-i = 1
-while i<6:
-    print(i)
-    if i == 3:
-        # break
-        # continue
-    i +=1
+# i = 1
+# while i<6:
+#     print(i)
+#     if i == 3:
+#         # break
+#         # continue
+#     i +=1
+
+#Functions
+# def my_func(*fname):
+#     print( fname + " inside the function")
+#
+# my_func("manvi")
+
+# def my_function(**kid):
+#   print("His last name is " + kid["lname"])
+#
+# my_function(fname = "Tobias", lname = "Refsnes")
+
+# def my_function(food):
+#   for x in food:
+#     print(x)
+#
+# fruits = ["apple", "banana", "cherry"]
+#
+# my_function(fruits)
+
+# def add_numbers( a = 7,  b = 8):
+#     sum = a + b
+#     print('Sum:', sum)
+#
+# add_numbers()
+
+# class ABC:
+#     def method_abc(self):
+#         print("Method is executed")
+# class_ref = ABC()
+# class_ref.method_abc()
+#
+# print(max(15,5))
+
+def outer_func():
+     var = 100
+     def inner_func():
+        print(f"Printing var from inner_func(): {var}")
+     inner_func()
+        print(f"Printing var from outer_func(): {var}")
