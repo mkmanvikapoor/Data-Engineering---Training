@@ -1,3 +1,4 @@
+import inspect
 from datetime import date
 # class Dog:
 #     species = "Canis familiaris"  #Class Atrributes
@@ -138,9 +139,76 @@ from datetime import date
 #
 # print(Person.isAdult(26))
 
-# def insertToFile():
+# from abc import ABC, abstractmethod
 #
-# def getFromFile():
+#
+# class Car(ABC):
+#     def mileage(self):
+#         pass
+#
+#
+# class Tesla(Car):
+#     def mileage(self):
+#         print("The mileage is 30kmph")
+#
+#
+# class Suzuki(Car):
+#     def mileage(self):
+#         print("The mileage is 25kmph ")
+#
+#
+# class Duster(Car):
+#     def mileage(self):
+#         print("The mileage is 24kmph ")
+#
+#
+# class Renault(Car):
+#     def mileage(self):
+#         print("The mileage is 27kmph ")
+#
+#
+# t = Tesla()
+# t.mileage()
+#
+# r = Renault()
+# r.mileage()
+#
+# s = Suzuki()
+# s.mileage()
+# d = Duster()
+# d.mileage()
+
+# my_list = [1, 2, 3]
+# dir(my_list)
+# dir()
+# print(inspect.getmembers(str))
+
+# class Class1:
+#     def m(self):
+#         print("In Class1")
+#
+#
+# class Class2(Class1):
+#     def m(self):
+#         print("In Class2")
+#         super().m()
+#
+#
+# class Class3(Class1):
+#     def m(self):
+#         print("In Class3")
+#         super().m()
+#
+#
+# class Class4(Class2, Class3):
+#     def m(self):
+#         print("In Class4")
+#         super().m()
+#
+#
+# print(Class4.mro())  # This will print list
+# print(Class4.__mro__)
+
 
 
 
